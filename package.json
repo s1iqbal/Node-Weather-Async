@@ -1,0 +1,23 @@
+{
+  "name": "node-weather-async",
+  "version": "1.0.0",
+  "description": "```\r Robust Weather app that determines the weather based on zip code or address.\r Purpose: Clean async code with the aim to practice.\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s1iqbal/Node-Weather-Async.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s1iqbal/Node-Weather-Async/issues"
+  },
+  "homepage": "https://github.com/s1iqbal/Node-Weather-Async#readme",
+  "dependencies": {
+    "request": "^2.73.0",
+    "yargs": "^11.0.0"
+  }
+}
