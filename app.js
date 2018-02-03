@@ -1,7 +1,5 @@
 const yargs = require('yargs');
-
-const geocode = require('./geocode/geocode.js');
-const weather = require('./weather/weather.js');
+const axiosWeather = require('./axiosWeather/axiosWeather.js');
 
 const argv = yargs
   .options({
@@ -18,17 +16,4 @@ const argv = yargs
 
 var encodedAddress = encodeURIComponent(argv.address);
 
-geocode.geocodeAddress(encodedAddress, (errorMessage, results) => {
-    if (errorMessage) {
-      console.log(errorMessage);
-    } else {
-        console.log("Displaying address for,", results.address);
-        weather.getWeather(results.latitude,results.longitude, (errorMessage, weatherResults) => {
-            if (errorMessage) {
-              console.log(errorMessage);
-            } else {
-              console.log(`It is currently ${weatherResults.temperature} degrees. It feels like ${weatherResults.apparentTemperature} degrees`);
-            }
-        });
-    }
-});
+axiosWeather.getWeather(encodedAddress);
