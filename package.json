@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/s1iqbal/Node-Weather-Async#readme",
   "dependencies": {
+    "axios": "^0.13.1",
     "request": "^2.73.0",
     "yargs": "^11.0.0"
   }
