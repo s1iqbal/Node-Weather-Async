@@ -6,6 +6,9 @@ Purpose: Clean async code with the aim to practice.
 
 # Command Example:
 ```
+node app.js -a="stanford university"
+
+
 node app.js --address={ZIPCODE/Address/Rel Address} //ignore {}
 node app.js -a={ZIPCODE/Address/Rel Address} //ignore {}
 ```
